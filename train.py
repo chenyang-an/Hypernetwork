@@ -254,7 +254,7 @@ if __name__ == '__main__':
     torch.cuda.set_device(0)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     train_data_path = '/home/c5an/train_script_lora_serv8/composition_lora/data/test_12.json'
-    os.environ['HF_TOKEN'] = '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'
+    os.environ['HF_TOKEN'] = ''
 
     raw_data = json.load(open(train_data_path, 'r'))
     # training_data = raw_data['train']
